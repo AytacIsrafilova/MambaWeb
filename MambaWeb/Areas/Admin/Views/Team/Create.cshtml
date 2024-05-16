@@ -1,0 +1,19 @@
+﻿@using MambaWeb.Models
+
+@model Team
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label asp-for="Fullname" class="form-label">Fullname</label>
+    <input asp-for="Fullname" class="form-control">
+    <span asp-validation-for="Fullname"></span>
+
+  </div>
+  <div class="mb-3">
+    <label asp-for="Profession" class="form-label">Profession</label>
+    <input asp-for="Profession" class="form-control">
+    <span asp-validation-for="Profession"></span>
+
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
